@@ -1,0 +1,154 @@
+<!--
+Integrantes: Philippe Amand de Mendieta, Jean Sepúlveda, Nicolás
+Tema: Relojes
+License URL: DN4101-004D
+-->
+{% load static %}
+<!DOCTYPE HTML>
+<html> 
+	<head>
+		<!-- TITULO -->
+		<title> The Lord of watches | Inicio |</title>
+		<!-- RESPONSIVIDAD -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- ESPAÑOL SIMBOLOS -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- IMPORTAR CSS STYLE -->
+		<link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' />
+		<link href="{% static 'css/flexboxgrid.css' %}" rel='stylesheet' type='text/css' />
+		<link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
+		<link href="{% static 'css/component.css' %}" rel='stylesheet' type='text/css' />
+		<link href="{% static 'css/flexslider.css' %}" rel='stylesheet' type='text/css' />
+		<link href="{% static 'css/megamenu.css' %}" rel='stylesheet' type='text/css' />
+		<link href="{% static 'css/megamenu.css' %}" rel="stylesheet" type="text/css" media="all" />
+		<!-- IMPORTAR JS JQUERY -->
+		<script type="text/javascript" src="{% static 'js/jquery-3.4.1.js'%}"></script>
+        <script type="text/javascript" src="{% static 'js/megamenu.js' %}"></script>
+        <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+        <script src="{% static 'js/jquery.easydropdown.js' %}"></script>
+        <script src="{% static 'js/simpleCart.min.js' %}"> </script>
+		<script src="{% static 'js/bootstrap.js' %}"></script>
+	</head>
+	<body>
+            <div class="men_banner">
+                    <div class="container">
+                            <!--Header TOP-->					
+                            <div class="row">
+                                <div class="col-md-2 col-lr-2 col-sm-2">
+                                    <div clas="header_left">
+                                        <nav>
+                                            <a class="" href="{% url 'registro' %}">REGISTRAR</a>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="box"></div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                    <div class="header_right">
+                                        <nav>
+                                            <a href="{% url 'avance' %}">Inicio</a>
+                                            <a>|</a>
+                                            <a href="{% url 'quienesomos' %}" >Quienes Somos</a>
+                                            <a>|</a>
+                                            <a href="Avance1.html">Contacto</a>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- LOGO -->
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4">
+                                    <div class="box">
+                                        <h1><a href="Avance1.html">The Lord of watches</a></h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- MENU -->
+                            <div class="row">
+                                <div class="menu">
+                                    <ul class="megamenu skyblue">
+                                        <!--HOMBRES-->								
+                                        <li><a class="color2" href="#">Hombres</a>
+                                            <div class="megapanel">
+                                                <div class="row">
+                                                    <div class="col1">
+                                                        <div class="h_nav">
+                                                            <h4>Para los Hombres</h4>
+                                                            <ul>
+                                                                <li><a href="men.html">Relojes</a></li>
+                                                                <li><a href="men.html">Blazers</a></li>
+                                                                <li><a href="men.html">Trajes</a></li>
+                                                                <li><a href="men.html">Pantalones</a></li>
+                                                                <li><a href="men.html">Camisas</a></li>
+                                                                <li><a href="men.html">Accesorios</a></li>
+                                                            </ul>
+                                                        </div>							
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!--MUJERES-->								
+                                        <li><a class="color4" href="#">Mujeres</a>
+                                            <div class="megapanel">
+                                                <div class="row">
+                                                    <div class="col1">
+                                                        <div class="h_nav">
+                                                            <h4>Para las Mujeres</h4>
+                                                        </div>												
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!--NIÑOS-->												
+                                        <li><a class="color10" href="#">Niños</a>
+                                            <div class="megapanel">
+                                                <div class="row">
+                                                    <div class="col1">
+                                                        <div class="h_nav">
+                                                            <h4>Para los Niños
+                                                                <li><a></a></li>
+                                                            </h4>
+                                                        </div>							
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <div class="clearfix"> </div>
+                                    </ul>				
+                                </div>    
+                            </div>   
+                        </div>    
+                    </div>             
+                </div>
+        {% block content %}{% endblock %}
+		<!--FOOTER-->
+		<div class="footer">
+			<div class="container">
+				<div class="newsletter">
+					<h3>Acerca de Nosotros</h3>
+					<p>Somos una tienda pionera en la venta de relojes importados y exportados, trabajamos solo con productos originales.</p>
+				</div>
+				<div class="cssmenu">
+					<ul>
+						<li class=""><a href="#">Privacidad</a></li>
+						<li><a href="#">Terminos</a></li>
+						<li><a href="Contacto.html">Contacto</a></li>
+						<li><a href="#">Acerca</a></li>
+						<li><a href="register.html">Registrar</a></li>
+					</ul>
+				</div>
+				<div id="social" class="tres">
+					<img src="{% static 'imagenes/facebook.png' %}" width="30px" height="30px">
+					<img src="{% static 'imagenes/instagram.png' %}" width="30px" height="30px">
+					<img src="{% static 'imagenes/whatsapp.png' %}" width="30px" height="30px">
+					<img src="{% static 'imagenes/gmail.png' %}" width="30px" height="30px">
+				</div>
+				<div class="clearfix"></div>
+				<div class="copy">
+					<p> &copy; 2019 Watches. Derechos Reservados  </p>
+				</div>	
+			</div>
+		</div>
+	</body>
+</html>

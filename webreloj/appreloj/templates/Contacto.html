@@ -1,0 +1,58 @@
+{% extends 'base_index.html' %} {% load static %} 
+
+
+{% block content %}
+
+<main>
+    <div class="newsletter">
+        <h3>Datos de Contacto</h3>
+    </div>
+    <div class="grid_4">
+        <div class="grid_2 preffix_1">
+            <ul class="iphone">
+                <i class="phone"> </i>
+                <li class="phone_desc">Telefono : +1 900 356 3476 </li>
+                <div class="clearfix"> </div>
+            </ul>
+            <ul class="iphone">
+                <i class="flag"> </i>
+                <li class="phone_desc">Sitio web : <a href="mailto:mail@demolink.org">www.lordofwatches.com</a></li>
+                <div class="clearfix"> </div>
+            </ul>
+        </div>
+        <div class="grid_3">
+            <ul class="iphone">
+                <i class="msg"> </i>
+                <li class="phone_desc">Email :
+                    <a href="mailto:mail@demolink.org"></a>LordofWatches@gmail.com</li>
+                <div class="clearfix"> </div>
+            </ul>
+            <ul class="iphone">
+                <i class="home"> </i>
+                <li class="phone_desc">Dirección : DuocUC Sede Antonio Varas </li>
+                <div class="clearfix"> </div>
+            </ul>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+    <!-- Formulario-->
+    <form>
+        <div class="newsletter">
+            <h3>Envianos tus Comentarios</h3>
+        </div>
+        <div class="col-md-6 to">
+            <input type="text" class="text" value="Nombre">
+            <input type="text" class="text" value="Correo">
+            <input type="text" class="text" value="Problema">
+        </div>
+        <div class="col-md-6 text">
+            <textarea value="Descripcion">Informacion del Problema</textarea>
+        </div>
+        <div class="clearfix"></div>
+        <div class="but__center">
+            <input type="submit" value="Enviar Mensaje">
+        </div>
+    </form>
+</main>
+
+{% endblock %}

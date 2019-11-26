@@ -1,0 +1,53 @@
+{% extends 'base_index.html' %}
+
+{% load static %}
+
+{% block content %}
+		<div class="banner">
+			<div class="account-in">
+				<div class="container">
+					<form> 
+						<div class="register-top-grid">
+							<h2>Informacion Personal</h2>
+							<div>
+								<span>Nombre</span>
+								<input type="text" class="text"> 
+							</div>
+							<div>
+								<span>Apellido</span>
+								<input type="text"> 
+							</div>
+							<div>
+								<span>Email<label>*</label></span>
+								<input type="text"> 
+							</div>
+							<div class="clearfix"> </div>
+								<a class="news-letter" href="#"></a>
+							</div>
+							<div class="register-bottom-grid">
+							<h2>Contraseña</h2>
+							<div>
+								<span>Contraseña</span>
+								<input type="password">
+							</div>
+							<div>
+							
+								<span>Confirmar Contraseña</span>
+								<input type="password">
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</form>
+					<div class="clearfix"> </div>
+					<div class="register-but">
+						<form action="Avance1.html" method="get">
+							<input type="submit" value="confirmar" >
+							<input type="submit" value="salir">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+{% endblock %}
+   
+	
